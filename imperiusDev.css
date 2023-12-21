@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+}
+:root{
+    font-size: 62.5%;;
+}
+.content{
+    display: grid;
+    grid-template-areas: 
+      ". . ."
+      "logo . form"
+      "logo . form"
+      ". . ."
+    ;
+    gap: 8.5rem
+}
+main{
+    grid-area: form;
+}
+aside{
+    grid-area: logo;
+}
+aside h1{
+    padding: 4rem;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+aside h1 span{
+    color:blue;
+}
+main{
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid black;
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+
+}
+main h2{
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+main h2 span{
+    color:blue;
+}
+main .actions{
+    display: flex;
+    flex-flow: column;
+}
+main .actions a{
+    border-radius: 1.2rem;
+    font-size: 2.4rem;
+    height: 5.5rem;
+ background-color: #000;
+ color:white;
+  text-decoration: none;
+
+  display: flex;
+  margin-top: 5.4rem;
+  justify-content: center;
+  align-items: center;
+}
+main .actions a+a{
+    background-color: blue;
+    color: white;
+    margin-top: 4.6rem;
+}
+main footer p{
+    font-size: 1.4rem;
+    margin-top: 8rem;
+
+}
+
+main footer a{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    color:#000;
+}
